@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "835630077436",
+    "project_id": "nomoney-4b20a",
+    "storage_bucket": "nomoney-4b20a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835630077436:android:07632f0854384184420e79",
+        "android_client_info": {
+          "package_name": "com.example.nomoney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835630077436-s3uve02au8g0jk56rptu84gu4ub9ndpn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nomoney",
+            "certificate_hash": "49cac71a0dea094b28ad9cc117d66a1ed17abe01"
+          }
+        },
+        {
+          "client_id": "835630077436-kkn4ojj71kmf7iauupidbsqffqsdig0v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2vlmH30FIf3LTw23JHpnfCOItB1U72_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835630077436-kkn4ojj71kmf7iauupidbsqffqsdig0v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
