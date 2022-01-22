@@ -3,4 +3,11 @@
     <string name="nomoney_app">NoMoney App</string>
     <string name="sign_in_to_continue">Sign in to continue</string>
     <string name="continue_with_google">Continue with Google</string>
+    <string-array name="items">
+        <item>Pilih kategori</item>
+        <item>Transportasi</item>
+        <item>Makanan</item>
+        <item>Hiburan</item>
+        <item>Lainnya</item>
+    </string-array>
 </resources>

@@ -93,7 +93,7 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    //innitializing the login process
+    //initializing the login process
     //user selects an email after the button is clicked.
 
     private void signIn() {
