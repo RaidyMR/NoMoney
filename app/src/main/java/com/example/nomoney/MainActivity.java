@@ -2,8 +2,12 @@ package com.example.nomoney;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -59,9 +63,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        toolbar = findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
-//        getSupportActionBar().setTitle("Pengeluaran: Rp. ");
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Pengeluaran: Rp. ");
 
         tvPengeluaran = findViewById(R.id.tvPengeluaran);
 
@@ -99,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
         String date = dateFormat.format(cal.getTime());
 
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("Dompet").child(onlineUserId);
-        Query query = reference.orderByChild("date").equalTo(date);
+        Query query = reference.orderByChild("date");
         query.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -202,5 +206,21 @@ public class MainActivity extends AppCompatActivity {
         });
 
         dialog.show();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId() == R.id.account){
+            Intent intent = new Intent(MainActivity.this, AccountActivity.class);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
