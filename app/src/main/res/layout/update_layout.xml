@@ -7,7 +7,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Update this item?"
+        android:text="Perbarui item ini?"
         android:textColor="#000000"
         android:gravity="center" />
 
@@ -22,7 +22,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Amount"
+        android:hint="Masukan Jumlah"
         android:textColor="#000000"
         android:inputType="number"
         android:id="@+id/amount" />
@@ -30,7 +30,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter note"
+        android:hint="Catatan"
         android:textColor="#000000"
         android:id="@+id/note" />
 
@@ -46,7 +46,7 @@
                 android:id="@+id/delete"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="delete"
+                android:text="Hapus"
                 android:textAllCaps="false"
                 android:textColor="#ffffff"
                 android:textStyle="bold"
@@ -62,7 +62,7 @@
                 android:id="@+id/update"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="update"
+                android:text="Perbarui"
                 android:textAllCaps="false"
                 android:textColor="#ffffff"
                 android:textStyle="bold"

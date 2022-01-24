@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Pengeluaran: Rp. ");
+        getSupportActionBar().setTitle("NoMoney");
 
         tvPengeluaran = findViewById(R.id.tvPengeluaran);
 
